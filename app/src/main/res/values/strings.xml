@@ -7,4 +7,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="openDrawer">Open Drawer</string>
     <string name="closeDrawer">Close Drawer</string>
+    <string name="long_string">Interdum et malesuada fames ac ante ipsum primis in faucibus. In auctor lacinia dolor in gravida. Phasellus commodo odio vulputate porttitor tincidunt. Vivamus nec urna vel quam vehicula tincidunt sodales et massa. Phasellus sit amet dolor vel purus iaculis semper. Sed tincidunt, nunc eu vulputate malesuada, urna risus vehicula tortor, et vehicula ligula nibh ac nisl. Donec interdum, mauris ac faucibus vulputate, velit massa malesuada tortor, vitae iaculis elit ex eu justo. Maecenas enim mi, interdum eu mi et, fermentum consequat est. Vestibulum luctus, arcu vitae euismod tincidunt, justo justo vehicula elit, in interdum lectus mi id est. Cras consectetur vestibulum lectus, eu scelerisque magna. Ut id tincidunt eros. Sed massa orci, molestie et lacus quis, varius facilisis augue. In hac habitasse platea dictumst.
+
+Aenean posuere neque ac sagittis accumsan. Curabitur a ipsum quam. Morbi malesuada vulputate fermentum. Fusce feugiat quis mi non semper. Sed bibendum urna id libero consectetur pharetra. Integer eget orci eget nunc rutrum tempus. Nullam vitae sem semper, imperdiet enim nec, rhoncus nisl. Aenean mattis augue at libero rhoncus porttitor.
+
+In in purus at diam malesuada maximus tincidunt quis risus. Duis fermentum aliquam accumsan. Sed sagittis laoreet metus. Sed mattis risus at elit auctor, eu congue felis pharetra. Vivamus sed lobortis felis. Fusce at finibus ipsum, in tempor nibh. Donec nec diam id neque malesuada porttitor sit amet vitae arcu. Morbi nec bibendum tellus. Quisque tellus nisi, pharetra ut lectus at, sollicitudin finibus sem. Suspendisse fringilla, sapien vel porta interdum, enim justo condimentum odio, ut porttitor ipsum augue eget augue. Sed accumsan viverra lobortis. Morbi felis eros, posuere quis erat fermentum, eleifend pulvinar lacus. Morbi facilisis leo sed fringilla dictum. Vestibulum sit amet eros at lacus sagittis imperdiet quis at orci.
+
+</string>
 </resources>

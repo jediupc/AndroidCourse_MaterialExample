@@ -10,8 +10,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -43,11 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.fab:
                 Snackbar snackbar = Snackbar.make(coordinatorLayout, "¡Soy un snackbar con botón!", Snackbar.LENGTH_LONG)
-                        .setAction("Action",new View.OnClickListener() {
+                        .setAction("Siguiente",new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 //Starting activity with a Transition Animation
-                                startActivity((new Intent(getApplicationContext(), DrawerActivity.class)), ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                                startActivity((new Intent(getApplicationContext(), DrawerActivity.class)),
+                                        ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
                             }
                         });
 
@@ -58,7 +57,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // Changing action button text color
                 View sbView = snackbar.getView();
                 TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-                textView.setTextColor(Color.BLUE);
+                textView.setTextColor(Color.WHITE);
+
+
+                //change background color
+                sbView.setBackgroundColor(Color.RED);
 
                 snackbar.show();
                 break;

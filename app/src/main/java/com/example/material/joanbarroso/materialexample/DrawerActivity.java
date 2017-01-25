@@ -1,11 +1,9 @@
 package com.example.material.joanbarroso.materialexample;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -59,6 +57,46 @@ public class DrawerActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.profile:
                         Toast.makeText(DrawerActivity.this, "Profile Selected", Toast.LENGTH_SHORT).show();
+
+
+
+
+
+
+
+
+                        AlertDialog.Builder builder =  new AlertDialog.Builder(DrawerActivity.this);
+
+                        builder.setTitle("Error");
+                        builder.setMessage("Archivo no encontrado");
+
+                        builder.setPositiveButton("Ok",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_LONG).show();
+                                    }
+                                });
+                        builder.setNegativeButton("Cancel",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        Toast.makeText(getApplicationContext(), "cancel", Toast.LENGTH_LONG).show();
+                                    }
+                                });
+
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
+
+
+
+
+
+
+
+
                         break;
 
                     case R.id.rate:
