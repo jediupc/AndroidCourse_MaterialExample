@@ -14,16 +14,13 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
     CoordinatorLayout coordinatorLayout;
     FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setUpViews();
-
     }
 
     private void setUpViews() {
@@ -37,11 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.fab:
                 Snackbar snackbar = Snackbar.make(coordinatorLayout, "¡Soy un snackbar con botón!", Snackbar.LENGTH_LONG)
-                        .setAction("Siguiente",new View.OnClickListener() {
+                        .setAction("Siguiente", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 //Starting activity with a Transition Animation
@@ -50,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             }
                         });
 
-
                 // Changing message text color
                 snackbar.setActionTextColor(Color.YELLOW);
 
@@ -58,8 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 View sbView = snackbar.getView();
                 TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
                 textView.setTextColor(Color.WHITE);
-
-
+                
                 //change background color
                 sbView.setBackgroundColor(Color.RED);
 

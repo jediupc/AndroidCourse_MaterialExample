@@ -22,11 +22,7 @@ public class DrawerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
-
-
         setUpViews();
-
-
     }
 
     private void setUpViews() {
@@ -39,7 +35,7 @@ public class DrawerActivity extends AppCompatActivity {
 
         //Initializing DrawerLayout
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout)
-;
+        ;
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             // This method will trigger on item Click of navigation menu
@@ -58,14 +54,7 @@ public class DrawerActivity extends AppCompatActivity {
                     case R.id.profile:
                         Toast.makeText(DrawerActivity.this, "Profile Selected", Toast.LENGTH_SHORT).show();
 
-
-
-
-
-
-
-
-                        AlertDialog.Builder builder =  new AlertDialog.Builder(DrawerActivity.this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(DrawerActivity.this);
 
                         builder.setTitle("Error");
                         builder.setMessage("Archivo no encontrado");
@@ -91,12 +80,6 @@ public class DrawerActivity extends AppCompatActivity {
                         dialog.show();
 
 
-
-
-
-
-
-
                         break;
 
                     case R.id.rate:
@@ -112,7 +95,7 @@ public class DrawerActivity extends AppCompatActivity {
         });
 
         // Initializing Drawer Layout and ActionBarToggle
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.openDrawer, R.string.closeDrawer){
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.openDrawer, R.string.closeDrawer) {
 
             @Override
             public void onDrawerClosed(View drawerView) {
